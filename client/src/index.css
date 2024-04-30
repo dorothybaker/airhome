@@ -1,0 +1,57 @@
+@import url("https://fonts.cdnfonts.com/css/trial-riegla");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "TRIAL Riegla";
+}
+
+::-webkit-scrollbar {
+  height: 0px;
+}
+
+.mantine-Menu-itemLabel {
+  font-size: 15px !important;
+}
+
+.mantine-Modal-title {
+  font-size: 17px !important;
+}
+
+.mantine-TextInput-label {
+  font-size: 14px !important;
+  font-weight: normal !important;
+}
+
+.mantine-Button-label,
+.mantine-Checkbox-label {
+  font-size: 15px !important;
+  font-weight: normal !important;
+}
+
+.mantine-TextInput-input,
+.mantine-Textarea-input,
+.mantine-NumberInput-label,
+.mantine-NumberInput-input,
+.mantine-DatePickerInput-input {
+  font-size: 15px !important;
+  font-family: "TRIAL Riegla" !important;
+}
+
+.mantine-Textarea-label,
+.mantine-NumberInput-label {
+  font-size: 14px !important;
+  font-weight: normal !important;
+}
+
+.mantine-TextInput-description,
+.mantine-Textarea-description {
+  font-size: 13px !important;
+}
+
+.mantine-DatePickerInput-label {
+  font-size: 13.5px !important;
+  font-weight: normal !important;
+}
