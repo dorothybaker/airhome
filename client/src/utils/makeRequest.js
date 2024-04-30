@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const API = axios.create({
-  baseURL: "http://localhost:8000/api",
+  baseURL: "https://airhome.onrender.com/api",
   withCredentials: true,
 });
