@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const API = axios.create({
-  baseURL: "https://airhome-server.vercel.app/api",
+  baseURL: "https://airhome.onrender.com/api",
   withCredentials: true,
 });
