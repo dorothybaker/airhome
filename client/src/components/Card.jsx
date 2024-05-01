@@ -20,7 +20,8 @@ function Card({ place }) {
           {place.address}
         </span>
         <p className="text-gray-600 text-sm">
-          <span className="text-black">${place.price}</span> / per night
+          <span className="text-black text-base">${place.price}</span> / per
+          night
         </p>
       </div>
     </div>
