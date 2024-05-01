@@ -42,8 +42,8 @@ function Bookings() {
           ))}
         </div>
       ) : (
-        <div className="sm:min-h-[400px] min-h-[300px] w-full flex items-center justify-center">
-          <span className="md:text-5xl sm:text-4xl text-3xl text-gray-400 text-center">
+        <div className="sm:min-h-[400px] min-h-[400px] w-full flex items-center justify-center">
+          <span className="md:text-4xl sm:text-3xl text-2xl text-gray-400 text-center">
             You don't have any bookings yet!
           </span>
         </div>

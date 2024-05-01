@@ -13,15 +13,14 @@ function Card({ place }) {
         </div>
       </Link>
       <div className="flex flex-col gap-[3px] px-3 pb-3">
-        <span className="text-[17px] line-clamp-1">
+        <span className="text-lg line-clamp-1">
           <Link to={`/accommodations/${place._id}`}>{place.title}</Link>
         </span>
-        <span className="text-[13px] text-gray-500 line-clamp-1">
+        <span className="text-sm text-gray-500 line-clamp-1">
           {place.address}
         </span>
         <p className="text-gray-600 text-sm">
-          <span className="text-[21px] text-black">${place.price}</span> / per
-          night
+          <span className="text-black">${place.price}</span> / per night
         </p>
       </div>
     </div>

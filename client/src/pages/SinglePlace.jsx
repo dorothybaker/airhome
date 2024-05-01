@@ -266,7 +266,7 @@ function SinglePlace() {
                   className="w-max flex items-center gap-0.5 text-sm text-primary"
                   onClick={() => setDesc(true)}
                 >
-                  <span className="underline underline-offset-2 mb-[1px]">
+                  <span className="underline underline-offset-2 mb-1">
                     Show more
                   </span>
                   <IoChevronForwardOutline size={13} />
@@ -280,7 +280,7 @@ function SinglePlace() {
                 size={"lg"}
               >
                 <div>
-                  <p className="leading-7 text-[15px]">
+                  <p className="text-[15px] leading-7">
                     {place?.description.split(".").map((s, id) => {
                       if (s !== "") {
                         return (
@@ -407,7 +407,7 @@ function SinglePlace() {
                   className={`h-10 bg-primary text-white text-[15px] w-full rounded-2xl ${
                     bLoad ? "cursor-not-allowed" : "cursor-pointer"
                   }`}
-                  onClick={user && nights > 0 ? handleBooking : ""}
+                  onClick={user && nights > 0 ? handleBooking : null}
                   disabled={bLoad}
                 >
                   {bLoad ? (

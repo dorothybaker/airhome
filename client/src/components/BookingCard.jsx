@@ -16,7 +16,7 @@ function BookingCard({ booking }) {
       </Link>
       <div className="flex flex-col gap-[1px] px-3 pb-3">
         <div className="flex flex-col gap-[1px]">
-          <span className="text-lg line-clamp-1">
+          <span className="text-lg line-clamp-1 font-medium">
             <Link to={`/accommodations/${booking.place._id}`}>
               {booking.place.title}
             </Link>
@@ -24,8 +24,10 @@ function BookingCard({ booking }) {
           <span className="text-xl text-primary">${booking.price}</span>
           <span className="text-sm text-gray-500">
             {moment(booking.dates[0]).format("MMM Do, YYYY")} &ndash;{" "}
-            {moment(booking.dates[1]).format("MMM Do, YYYY")} &nbsp; (
-            {differenceInDays(booking.dates[1], booking.dates[0])} nights)
+            {moment(booking.dates[1]).format("MMM Do, YYYY")}
+          </span>
+          <span className="text-sm text-gray-500">
+            ({differenceInDays(booking.dates[1], booking.dates[0])} nights)
           </span>
         </div>
         <div className="flex flex-col gap-0.5">

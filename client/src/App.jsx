@@ -5,12 +5,14 @@ import Home from "./pages/Home";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import NewPlace from "./pages/NewPlace";
 import SinglePlace from "./pages/SinglePlace";
+import Footer from "./components/Footer";
 
 function Layout() {
   return (
     <>
       <Navbar />
       <Outlet />
+      <Footer />
     </>
   );
 }

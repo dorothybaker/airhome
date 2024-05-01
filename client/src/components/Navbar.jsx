@@ -37,10 +37,10 @@ function Navbar() {
         </div>
         <div className="flex-1 md:flex items-center justify-center hidden cursor-pointer">
           <div className="flex items-center gap-2 divide-x border shadow-sm rounded-3xl md:px-5 sm:px-2 py-2 w-max justify-center">
-            <span className="px-2 text-[15px]">Anywhere</span>
-            <span className="px-2 text-[15px]">Any week</span>
+            <span className="px-2 text-sm">Anywhere</span>
+            <span className="px-2 text-sm">Any week</span>
             <div className="px-2 flex items-center gap-3">
-              <span className="text-gray-600 text-[15px]">Add guests</span>
+              <span className="text-gray-600 text-sm">Add guests</span>
               <button className="bg-primary h-7 w-7 text-white flex items-center justify-center rounded-full">
                 <IoSearchOutline size={16} />
               </button>
@@ -49,7 +49,7 @@ function Navbar() {
         </div>
         <div className="flex-1 flex items-center gap-5 justify-end">
           <span
-            className="sm:block hidden text-[15px] cursor-pointer"
+            className="sm:block hidden text-sm cursor-pointer"
             onClick={() => navigate(`${user ? "/accommodations" : "/"}`)}
           >
             Airhome your home
